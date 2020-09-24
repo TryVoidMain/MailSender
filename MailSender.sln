@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender", "MailSender\MailSender.csproj", "{ED0B4E17-C4F4-4751-80D2-D1A2A7E62784}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{96863DD1-A184-46B1-BC47-272858DD49A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "Tests\ConsoleTest\ConsoleTest.csproj", "{B9B42B93-0774-45C4-B03D-846368FC4A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{ED0B4E17-C4F4-4751-80D2-D1A2A7E62784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0B4E17-C4F4-4751-80D2-D1A2A7E62784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0B4E17-C4F4-4751-80D2-D1A2A7E62784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B42B93-0774-45C4-B03D-846368FC4A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B42B93-0774-45C4-B03D-846368FC4A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B42B93-0774-45C4-B03D-846368FC4A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B42B93-0774-45C4-B03D-846368FC4A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9B42B93-0774-45C4-B03D-846368FC4A1E} = {96863DD1-A184-46B1-BC47-272858DD49A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8F52A5D-7349-4CBF-AFCE-E5685670FB42}
