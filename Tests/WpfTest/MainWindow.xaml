@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Label Width="40" Height="30"
+               VerticalAlignment="Top" HorizontalAlignment="Left"
+               Margin="100,70" Content ="Label 1"/>
+        <Label Width="40" Height="30"
+               VerticalAlignment="Top" HorizontalAlignment="Left"
+               Margin="300,70" Content="Label 2"/>
+        <TextBox Width="100" Height="30"
+                   VerticalAlignment="Top" HorizontalAlignment="Left"
+                   Margin="70, 100"></TextBox>
+        <PasswordBox Width="100" Height="30"
+                   VerticalAlignment="Top" HorizontalAlignment="Left"
+                   Margin="270, 100"></PasswordBox>
+        <Button Content="Button" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="450,100,0,0"
+                Height="50" Width="100"/>
     </Grid>
 </Window>
