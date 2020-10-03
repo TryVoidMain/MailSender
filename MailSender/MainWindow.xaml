@@ -66,7 +66,98 @@
                     </GroupBox>
                 </DockPanel>
             </TabItem>
-            <TabItem Header="Планировщик"></TabItem>
+            <TabItem Header="Планировщик">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Column="0" Header="Управление">
+                        <StackPanel>
+                            <TextBlock Text="Календарь" TextAlignment="Center"/>
+                            <Calendar/>
+                            <StackPanel Margin="5,7">
+                                <StackPanel.Resources>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Margin" Value="0,3"/>
+                                        <Setter Property="Background" Value="White"/>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <Button Content="Отправить"/>
+                                <Button Content="Запланировать"/>
+                            </StackPanel>
+                            
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Column="1" Header="Задания"></GroupBox>
+                    <GroupBox Grid.Column="1" Header="Задания">
+                        <ListBox>
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBoxItem>
+                                <GroupBox>
+                                    <GroupBox.Header>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock>Задание</TextBlock>
+                                            <Button BorderThickness="0" Background="Transparent" Foreground="Red">X</Button>
+                                        </StackPanel>
+                                    </GroupBox.Header>
+                                    <StackPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Время"/>
+                                            <TextBlock Text="21.09.2020 15:00"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Отправитель"/>
+                                            <TextBlock Text="Иванов"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Получатель"/>
+                                            <TextBlock Text="Петров"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Сообщение"/>
+                                            <TextBlock Text="Заголовок сообщения"/>
+                                        </DockPanel>
+                                    </StackPanel>
+                                </GroupBox>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <GroupBox>
+                                    <GroupBox.Header>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock>Задание</TextBlock>
+                                            <Button BorderThickness="0" Background="Transparent" Foreground="Red">X</Button>
+                                        </StackPanel>
+                                    </GroupBox.Header>
+                                    <StackPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Время"/>
+                                            <TextBlock Text="21.09.2020 15:00"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Отправитель"/>
+                                            <TextBlock Text="Иванов"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Получатель"/>
+                                            <TextBlock Text="Петров"/>
+                                        </DockPanel>
+                                        <DockPanel>
+                                            <TextBlock Text="Сообщение"/>
+                                            <TextBlock Text="Заголовок сообщения"/>
+                                        </DockPanel>
+                                    </StackPanel>
+                                </GroupBox>
+                            </ListBoxItem>
+                        </ListBox>
+                    </GroupBox>
+                    <GridSplitter Grid.Column="0" HorizontalAlignment="Right" Width="3" Background="Transparent" ShowsPreview="True"/>
+                </Grid>
+            </TabItem>
             <TabItem Header="Письма"></TabItem>
             <TabItem Header="Статистика"></TabItem>
         </TabControl>
