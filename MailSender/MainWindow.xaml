@@ -158,8 +158,70 @@
                     <GridSplitter Grid.Column="0" HorizontalAlignment="Right" Width="3" Background="Transparent" ShowsPreview="True"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Письма"></TabItem>
-            <TabItem Header="Статистика"></TabItem>
+            <TabItem Header="Письма">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" MinWidth="200" MaxWidth="400"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Column="0" Header="Список писем">
+                        <ListBox>
+                            <ListBoxItem>Письмо 1</ListBoxItem>
+                            <ListBoxItem>Письмо 2</ListBoxItem>
+                            <ListBoxItem>Письмо 3</ListBoxItem>
+                        </ListBox>
+                    </GroupBox>
+                    <GroupBox Grid.Column="1" Header="Редактор">
+                        <DockPanel>
+                            <GroupBox Header="Заголовок" DockPanel.Dock ="Top">
+                                <TextBox/>
+                            </GroupBox>                            
+                            <GroupBox Header="Тело письма">
+                                <TextBox AcceptsReturn="True"/>
+                            </GroupBox>
+                        </DockPanel>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Статистика">
+                <Grid Margin="10">
+                    <Grid.Resources>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="Grid.Column" Value="0">
+                                    <Setter Property="FontWeight" Value="Bold"></Setter>
+                                    <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                                </Trigger>
+                                <Trigger Property="Grid.Column" Value="1">
+                                    <Setter Property="Margin" Value="5,0,0,0"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Resources>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Количество отправленных писем:"/>
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="5"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="1" Text="Количество отправителей в базе:"/>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="5"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="2" Text="Количество получателей в базе:"/>
+                    <TextBlock Grid.Column="1" Grid.Row="2" Text="10"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="3" Text="Количество запусков:"/>
+                    <TextBlock Grid.Column="1" Grid.Row="3" Text="10"/>
+                </Grid>
+            </TabItem>
         </TabControl>
     </DockPanel>
 </Window>
