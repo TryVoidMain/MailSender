@@ -6,4 +6,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Media\Add.png" />
+    <None Remove="Media\Clock.jpg" />
+    <None Remove="Media\Delete.png" />
+    <None Remove="Media\Edit.png" />
+    <None Remove="Media\Schedule.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Media\Add.png" />
+    <Resource Include="Media\Clock.jpg" />
+    <Resource Include="Media\Delete.png" />
+    <Resource Include="Media\Edit.png" />
+    <Resource Include="Media\Schedule.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome5" Version="2.0.8" />
+  </ItemGroup>
+
 </Project>
