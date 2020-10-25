@@ -12,7 +12,9 @@ namespace MailSender.Lib
         public string Login { get; set; }
         public string Password { get; set; }
         public bool UseSSL { get; set; }
-        public void SendMessage(string SenderAddress, string RecipientAddress, string Subject, string Body)
+        public void SendMessage(
+            string SenderAddress, string RecipientAddress, 
+            string Subject, string Body)
         {
             var from = new MailAddress(SenderAddress);
             var to = new MailAddress(RecipientAddress);
