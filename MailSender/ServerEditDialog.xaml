@@ -42,6 +42,9 @@
                     <TextBox Name="ServerPort" Text="25"
                             PreviewTextInput="OnPortTextInput"/>
                 </GroupBox>
+                <GroupBox Header="Адрес">
+                    <TextBox Name="ServerAddress"/>
+                </GroupBox>
             </DockPanel>
         </Border>
         <UniformGrid DockPanel.Dock="Top" Rows="1">
@@ -49,7 +52,7 @@
                 <TextBox Name="Login"/>
             </GroupBox>
             <GroupBox Header="Пароль">
-                <TextBox Name="Password"/>
+                <PasswordBox Name="Password"/>
             </GroupBox>
         </UniformGrid>
 
