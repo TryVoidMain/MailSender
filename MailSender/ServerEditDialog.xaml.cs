@@ -2,7 +2,6 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Linq;
-using System.Net.Sockets;
 
 namespace MailSender
 {
@@ -10,7 +9,7 @@ namespace MailSender
     {
         private ServerEditDialog() => InitializeComponent();
         
-        private void OnTextPortInput(object Sender, TextCompositionEventArgs E)
+        private void OnPortTextInput(object Sender, TextCompositionEventArgs E)
         {
             if (!(Sender is TextBox text_box) || text_box.Text == "") return;
             E.Handled = !int.TryParse(text_box.Text, out _);
